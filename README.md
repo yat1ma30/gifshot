@@ -1,3 +1,10 @@
+# Forked Project from Yahoo/gifshot
+
+Dramatically faster and more accurate GIF creation from video.
+Does not work with webcams, only video.
+
+---
+
 ![](http://i.imgur.com/I17GUX9.gif)
 =======
 

@@ -2188,8 +2188,8 @@ var screenShot = {
                 progressCallback((numFrames - pendingFrames) / numFrames);
 
                 if (framesLeft > 0) {
-                    // test
-                    utils.requestTimeout(captureSingleFrame, waitBetweenFrames);
+                    videoElement.addEventListener("seeked", captureSingleFrame, { once: true });
+                    videoElement.currentTime = (options.offset || 0) + waitBetweenFrames / 1000 * (numFrames - pendingFrames + 1);
                 }
 
                 if (!pendingFrames) {
